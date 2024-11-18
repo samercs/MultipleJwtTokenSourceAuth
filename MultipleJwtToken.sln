@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35506.116 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleJwtToken", "MultipleJwtToken\MultipleJwtToken.csproj", "{292D87F0-63B7-4EE7-9793-25BA48152F9B}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7964DAA4-8BD3-4448-A7EF-B15C291A9CEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{292D87F0-63B7-4EE7-9793-25BA48152F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{292D87F0-63B7-4EE7-9793-25BA48152F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{292D87F0-63B7-4EE7-9793-25BA48152F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7964DAA4-8BD3-4448-A7EF-B15C291A9CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7964DAA4-8BD3-4448-A7EF-B15C291A9CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7964DAA4-8BD3-4448-A7EF-B15C291A9CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7964DAA4-8BD3-4448-A7EF-B15C291A9CEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

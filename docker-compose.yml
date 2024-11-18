@@ -1,0 +1,18 @@
+services:
+  multiplejwttoken:
+    image: ${DOCKER_REGISTRY-}multiplejwttoken
+    build:
+      context: .
+      dockerfile: MultipleJwtToken/Dockerfile
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    command: start-dev
+    environment:
+       - KC_HEALTH_ENABLED=true
+       - KEYCLOAK_ADMIN=admin
+       - KEYCLOAK_ADMIN_PASSWORD=admin
+    volumes:
+        - ./.containers/identity:/opt/keycloak/data
+    ports:
+        - 18080:8080
