@@ -2,6 +2,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -45,6 +46,7 @@ builder.Services.Configure<JsonOptions>(i =>
     i.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     i.SerializerOptions.MaxDepth = 0;
 });
+builder.Services.AddTransient<IClaimsTransformation, CustomClaimTransform>();
 var app = builder.Build();
 
 
